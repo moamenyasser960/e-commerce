@@ -1,0 +1,210 @@
+There are three main phase:
+
+    Front End: Whatever user see.
+
+There are many technologies like:
+
+HTML, CSS3, Bootstrap, JavaScript, Jquery, Angular JS, React JS, BackBone JS etc.
+
+    Back End: Middle ware for front end and database .
+
+Languages:
+
+Java, C#, PHP, Python, Ruby, C++, .Net, Node.js, Perl, Active VFP, ASP,  C, etc.
+
+    Data Base: Stores data.
+
+Mongo DB, Mysql, Oracle etc.
+C#, R, PHP, and Python are some of the other widely used languages in this category.
+
+Here I have listed only the popular technologies but there are many more technologies which can be also used.
+
+So pick one technology from 2 and 3 each and for front end choose according to your easiness.
+
+Thanks !!
+
+
+The Name:-
+
+ | iselling.online | quick sell | Isellfast | rabha | kasbana | buysell | peopletrade | sellia | Qarnak |  |  | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+qarnak.com
+
+qurnec.com
+iseling.com
+aliktar.com
+wasiella.com
+waisla.com
+shaipob.com
+tredingmisr.com
+egyptmarket
+souqegypt
+magr.com
+buyandsell
+
+peryland.com
+pastfor.com
+retroanti.com
+retroant.com
+theorypand.com
+comesia.com
+
+ixeir.com
+
+classiciat.com
+
+
+
+
+
+
+
+
+
+
+
+books {
+01:08 clean code
+02:25 the pragmatic programmer
+03:19 design patterns
+04:09 the mythical man month
+05:00 introduction to algorithms
+06:17 code complete
+07:15 refactoring
+07:53 cracking the coding interview
+08:37 working effectively with legacy code
+09:44 the clean coder
+}
+
+repositories {
+00:00 introduction to the most 10 useful github resources
+00:26 free programming books github repository
+01:06 coding interview university github repository
+01:41 developer roadmap github repository (frontend, backend, devops)
+02:35 Awesome github repository
+03:38 build your own x github repository
+04:35 best websites a programmer should visit github repository
+05:16 every programmer should know github repository
+05:49 tech interv{
+00:00 introduction to the most 10 useful github resources
+{
+00:00 introduction to the most 10 useful github resources
+iew handbook github repository
+06:32 the art of command line github repository
+07:57 system design primer github repository
+}
+
+
+hello and welcom you in amazon.
+
+amazon is an ecommerse website that helps you buy and sell anything without the hasle of buying and selling the things and without extra effort and for free!
+
+we hope you engoing and find what you need in amazon.
+
+amazon has developed by moamen yasser becuase he wanted to improve the market and help you!
+
+(moamen yasser)
+
+thanks you for visit amazon and have a nice day ❤️
+
+contact us or go to home page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to make the website better :
+- the search problems : ه & ة
+- more security by the personal information like the presonal card and the adress and the social media acconts
+
+- show the favorites number out of the ad & maybe the views also
+
+$160 48MONTH
+
+$108 24MONTH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

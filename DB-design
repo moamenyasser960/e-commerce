@@ -1,0 +1,18 @@
+|- ad:
+ id,photos,price,title,created,location,area,category,subcategory,branch,type,brand,installment,status,deliverable,description,favorites,contact,user_id,views,display_number
+|- chat:
+user, message, created, seen
+|- user:
+id,name,phone,favorites,searches
+|- 
+|- 
+|- 
+|- 
+|- 
+|- 
+|- 
+|- 
+|- 
+|- 
+|- 
+|- 

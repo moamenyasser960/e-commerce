@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+ <title>The Main</title>
+
+ <link rel="stylesheet" href="css/global.css">
+ 
+ <link rel="stylesheet" media='screen and (max-width: 992px)' href="css/nav-mobile.css">
+ <link rel="stylesheet" media='screen and (min-width: 992px)' href="css/nav-comp.css">
+ 
+
+ <link id="screenSize" rel="stylesheet" href="css/home.css">
+
+ <link rel="apple-touch-icon" sizes="256x256" href="a.png" type="image/png" />
+
+</head>
+
+<body>
+ <div id="loader">
+  <div class="loader-span"></div>
+ </div>
+
+ <header>
+
+  <div class="d-flex" onmouseleave="remove('header-map', 'd-block');">
+   <a href="#">
+    <img src="images/a.png" alt="logo" width="56" class="invert">
+   </a>
+
+   <form action="" method="get" title="Chose A location" onclick="addRemove('header-map', 'd-none','d-block');"
+    class="location-header">
+
+    <div>
+     <img src="icons/location-ico.svg" alt="" width="24" class="invert">
+
+
+     <span>Egypt</span>
+     <img src="icons/drop-down.svg">
+
+     <span class="header-map"></span>
+
+     <div class="header-map">
+
+      <input id="currentPosition" type="checkbox">
+      <label for="currentPosition">
+       <img src="icons/current-location.svg" width="24"
+        style="filter: invert(22%) sepia(68%) saturate(5592%) hue-rotate(218deg) brightness(100%) contrast(111%);">
+       current position
+      </label>
+      <hr>
+
+      <input id="cairo" value="cairo" value="cairo" type="checkbox">
+      <label for="cairo">
+       <h3>cairo <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="giza" value="giza" type="checkbox">
+      <label for="giza">
+       <h3>giza <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="sharqia" value="sharqia" type="checkbox">
+      <label for="sharqia">
+       <h3>sharqia <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="dakahlia" value="dakahlia" type="checkbox">
+      <label for="dakahlia">
+       <h3>dakahlia <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="beheira" value="beheira" type="checkbox">
+      <label for="beheira">
+       <h3>beheira <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="minya" value="minya" type="checkbox">
+      <label for="minya">
+       <h3>minya <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="qalyubia" value="qalyubia" type="checkbox">
+      <label for="qalyubia">
+       <h3>qalyubia <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="sohag" value="sohag" type="checkbox">
+      <label for="sohag">
+       <h3>sohag <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="alexandria" value="alexandria" type="checkbox">
+      <label for="alexandria">
+       <h3>alexandria <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="gharbia" value="gharbia" type="checkbox">
+      <label for="gharbia">
+       <h3>gharbia <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="asyut" value="asyut" type="checkbox">
+      <label for="asyut">
+       <h3>asyut <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="monufia" value="monufia" type="checkbox">
+      <label for="monufia">
+       <h3>monufia <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="faiyum" value="faiyum" type="checkbox">
+      <label for="faiyum">
+       <h3>faiyum <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="kafr el-sheikh" value='kafr el-sheikh' type="checkbox">
+      <label for="kafr el-sheikh">
+       <h3>kafr el-sheikh <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="qena" value="qena" type="checkbox">
+      <label for="qena">
+       <h3>qena <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="beni suef" value='beni suef' type="checkbox">
+      <label for="beni suef">
+       <h3>beni suef <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="damietta" value='damietta' type="checkbox">
+      <label for="damietta">
+       <h3>damietta <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="Aswan" value='Aswan' type="checkbox">
+      <label for="Aswan">
+       <h3>Aswan <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="ismailia" value='ismailia' type="checkbox">
+      <label for="ismailia">
+       <h3>ismailia <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="luxor" value='luxor' type="checkbox">
+      <label for="luxor">
+       <h3>luxor <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="suez" value='suez' type="checkbox">
+      <label for="suez">
+       <h3>suez <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="port Said" value='port Said' type="checkbox">
+      <label for="port Said">
+       <h3>port Said <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="matrouh" value='matrouh' type="checkbox">
+      <label for="matrouh">
+       <h3>matrouh <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="north sinai" value='north sinai' type="checkbox">
+      <label for="north sinai">
+       <h3>north sinai <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="red sea" value='red sea' type="checkbox">
+      <label for="red sea">
+       <h3>red sea <fw>❭</fw>
+       </h3>
+      </label>
+
+      <input id="new valley" value='new valley' type="checkbox">
+      <label for="new valley">
+       <h3>new valley <fw>❭</fw>
+       </h3>
+      </label>
+
+
+      <input id="south sinai" value='south sinai' type="checkbox">
+      <label for="south sinai">
+       <h3>south sinai <fw>❭</fw>
+       </h3>
+      </label>
+
+
+     </div>
+    </div>
+
+   </form>
+  </div>
+
+
+  <div onmouseleave="addRemove('hamburger-menu', 'd-block', 'd-none');" class="header-hamburger">
+   <a onclick="toggle('sign-in-form', 'd-flex')" href="#" class="sign-in-header">
+    <span>sign in ›</span>
+    <img src="icons/pngkey.com-user-png-729670.svg" class="invert" width="36" alt="">
+   </a>
+   <span onclick="toggle('hamburger-menu', 'd-block')">≡</span>
+   <div class="hamburger-menu">
+    <a href="#">
+     <img src="icons/camera.svg" alt="">
+     <h3>sell now</h3>
+    </a>
+    <a href="#">
+     <img src="icons/heart.svg" alt="">
+     <h3>
+      my favorites</h3>
+    </a>
+    <a href="#">
+     <img src="icons/rectangle-list.svg" alt="">
+     <h3>my ads</h3>
+    </a>
+    <a href="#" class="my-chat">
+     <img src="icons/chat-square-dots.svg" alt="">
+     <h3>
+      my chats</h3>
+    </a>
+    <hr>
+    <a href="#">
+     <img src="icons/journal-text.svg" alt="">
+     <h3>
+      blog</h3>
+    </a>
+    <a href="#">
+     <img src="icons/info-circle.svg" alt="">
+     <h3>
+      help</h3>
+    </a>
+    <hr>
+    <a href="#"><img src="icons/globe.svg" alt="language"><b>
+      AR</b></a>
+    <hr>
+    <a><img class="blue-on" src="icons/box-arrow-right.svg" alt=""> log out</a>
+    <a onclick="toggle('sign-in-form', 'd-flex')" class="btn">sign in</a>
+    <a onclick="toggle('create-account', 'd-flex')">Create an account</a>
+   </div>
+  </div>
+
+  <form action="" method="get" class="search-top">
+
+   <select name="" title="Chose An Category" onchange="addRemove('selectCategory','', 'bigSelect');"
+    class="selectCategory">
+    <option href="#" value="all">All</option>
+    <option href="#" value="vehicles">Vehicles</option>
+    <option href="#" value="properties">Properties</option>
+    <option href="#" value="mobile">Mobile Phones</option>
+    <option href="#" value="electronics">Electronics & Appliances</option>
+    <option href="#" value="furniture">Furniture & Decor</option>
+    <option href="#" value="properties">Business, Industrial & Agriculture</option>
+    <option href="#" value="books">Books, Sports & Hobbies</option>
+    <option href="#" value="pets">Pets & Accessories</option>
+    <option href="#" value="kids">Kids & Babies</option>
+    <option href="#" value="jobs">Fashion & Beauty</option>
+    <option href="#" value="jobs">Services</option>
+    <option href="#" value="jobs">Jobs</option>
+   </select>
+   <div class="search-header-res">
+    <input type="search" placeholder="Search For Any Thing..." onfocus="toggle('search-result', 'd-block');"
+     onblur="addRemove('search-result', 'd-block', 'd-none');" onkeydown="add('search-result','d-block');" name=""
+     class="search-header">
+
+    <div class="search-result" onmouseleave="toggle('search-result', 'd-block');">
+
+     <a href="https://google.com">Item 1</a>
+     <a href="#">Item 2</a>
+     <a href="#">Item 3</a>
+     <a href="#">Item 4</a>
+     <a href="#">Item 5</a>
+     <a href="#">Item 6</a>
+     <a href="#">Item 7</a>
+     <a href="#">Item 8</a>
+     <a href="#">Item 9</a>
+     <a href="#">Item 10</a>
+
+    </div>
+   </div>
+   <button type="submit" title="Search Now">
+    <img src="icons/search.svg" width="32" class="invert" alt="Search" style="
+max-width: 28px;
+">
+   </button>
+  </form>
+
+  <a href="#" class="outline-btn sign-in" onclick="toggle('sign-in-form', 'd-flex')">Sign In</a>
+  <a href="#" class="btn sell">Sell</a>
+
+ </header>
+
+ <nav onmouseleave="addRemove('nav-links', 'd-flex', 'd-none');" id="nav">
+  <div onclick="toggle('nav-links', 'd-flex');">
+   <a>☰ More</a>
+  </div>
+
+  <div class="parent-hover-show">
+   <a href="">
+    <h2>vehicles</h2>
+   </a>
+   <div class="hover-show vehicles">
+    <a href="">
+     <h3>all in vehicles<ri>»</ri>
+     </h3>
+    </a>
+    <a href="https://google.com">
+     <h3>cars for sale</h3>
+    </a>
+    <a href="">
+     <h3>Cars for Rent</h3>
+    </a>
+    <a href="">
+     <h3>Cars Spare Parts</h3>
+    </a>
+    <a href="">
+     <h3>Tires, batteries, oils & accessories
+     </h3>
+    </a>
+    <a href="">
+     <h3>Motorcycles & Accessories
+     </h3>
+    </a>
+    <a href="">
+     <h3>Boats & watercraft
+     </h3>
+    </a>
+    <a href="">
+     <h3>Heavy trucks, buses & other vehicles
+     </h3>
+    </a>
+   </div>
+  </div>
+
+  <div class="parent-hover-show">
+   <a href="">
+    <h2>Properties</h2>
+   </a>
+   <div class="hover-show properties">
+    <a href="https://google.com">
+     <h3>all in Properties<ri>»</ri>
+     </h3>
+    </a>
+    <a href="">
+     <h3>Apartments for Sale
+     </h3>
+    </a>
+    <a href="">
+     <h3>Apartments for Rent
+     </h3>
+    </a>
+    <a href="">
+     <h3>Villas For Sale
+     </h3>
+    </a>
+    <a href="">
+     <h3>Villas For Rent
+     </h3>
+    </a>
+    <a href="">
+     <h3>Vacation homes for sale
+     </h3>
+    </a>
+    <a href="">
+     <h3>Vacation Homes for Rent
+     </h3>
+    </a>
+    <a href="">
+     <h3>Commercial for Sale
+     </h3>
+    </a>
+    <a href="">
+     <h3>Commercial for Rent
+     </h3>
+    </a>
+    <a href="">
+     <h3>Buildings & Lands
+     </h3>
+    </a>
+   </div>
+  </div>
+  <div class="parent-hover-show">
+   <a href="">
+    <h2>Mobiles &
+     Tablets</h2>
+   </a>
+   <div class="hover-show mobiles">
+    <a href="">
+     <h3>all in Mobiles & Tablets<ri>»</ri>
+     </h3>
+    </a>
+    <a href="">
+     <h3>Mobile Phones
+     </h3>
+    </a>
+    <a href="">
+     <h3>Tablets
+     </h3>
+    </a>
+    <a href="">
+     <h3>Mobile & Tablet Accessories
+     </h3>
+    </a>
+    <a href="">
+     <h3>Mobile Numbers
+     </h3>
+    </a>
+   </div>
+  </div>
+  <div class="parent-hover-show">
+   <a href="">
+    <h2>Electronics & Appliances</h2>
+   </a>
+   <div class="hover-show electronics">
+    <a href="">
+     <h3>all in Electronics & Appliances<ri>»</ri>
+     </h3>
+    </a>
+    <a href="">
+     <h3>Home Appliances
+     </h3>
+    </a>
+    <a href="">
+     <h3>Computers & Accessories
+     </h3>
+    </a>
+    <a href="">
+     <h3>Video games & consoles
+     </h3>
+    </a>
+    <a href="">
+     <h3>Cameras & Photography
+     </h3>
+    </a>
+    <a href="">
+     <h3>TV, Audio & Video
+     </h3>
+    </a>
+   </div>
+  </div>
+  <div class="parent-hover-show">
+   <a href="">
+    <h2>Furniture
+     & Decor</h2>
+   </a>
+   <div class="hover-show furniture">
+    <a href="">
+     <h3>all in Furniture & Decor<ri>»</ri>
+     </h3>
+    </a>
+    <a href="">
+     <h3>Bathroom
+     </h3>
+    </a>
+    <a href="">
+     <h3>Bedroom
+     </h3>
+    </a>
+    <a href="">
+     <h3>Dining Room
+     </h3>
+    </a>
+    <a href="">
+     <h3>Fabrics, curtains & carpets
+     </h3>
+    </a>
+    <a href="">
+     <h3>Garden & Outdoor
+     </h3>
+    </a>
+    <a href="">
+     <h3>Home Decoration
+     </h3>
+    </a>
+    <a href="">
+     <h3>Kitchen & Kitchenware
+     </h3>
+    </a>
+    <a href="">
+     <h3>Lightings
+     </h3>
+    </a>
+    <a href="" class="border-bottom">
+     <h3>Living Room</h3>
+    </a>
+    <a href="">
+     <h3>Other Furniture
+     </h3>
+    </a>
+
+   </div>
+  </div>
+  <div class="parent-hover-show">
+   <a href="">
+    <h2>Business,
+     Industrial & Agriculture</h2>
+   </a>
+   <div class="hover-show business">
+    <a href="">
+     <h3>all in Business, Industrial & Agriculture<ri>»</ri>
+     </h3>
+    </a>
+
+    <a href="">
+     <h3>Industrial Equipment
+     </h3>
+    </a>
+    <a href="">
+     <h3>Construction
+     </h3>
+    </a>
+    <a href="">
+     <h3>Office Furniture & Equipment
+     </h3>
+    </a>
+    <a href="">
+     <h3>Restaurants Equipment
+     </h3>
+    </a>
+    <a href="">
+     <h3>Medical Equipment
+     </h3>
+    </a>
+    <a href="">
+     <h3>Agriculture
+     </h3>
+    </a>
+    <a href="" class="border-bottom">
+     <h3>Whole Business for Sale</h3>
+    </a>
+    <a href="">
+     <h3>Other Business, Industrial & Agriculture
+     </h3>
+    </a>
+
+   </div>
+  </div>
+  <div class="jobs parent-hover-show">
+   <a href="">
+    <h2>Jobs</h2>
+   </a>
+   <div class="hover-show in-Jobs border-bottom">
+    <a href="">
+     <h3>all in Jobs<ri>»</ri>
+     </h3>
+    </a>
+    <a href="">
+     <h3>Accounting, Finance & Banking</h3>
+     </h3>
+    </a>
+    <a href="">
+     <h3>Customer Service & Call Center</h3>
+    </a>
+    <a href="">
+     <h3>Drivers & Delivery</h3>
+    </a>
+    <a href="">
+     <h3>Designers</h3>
+    </a>
+    <a href="">
+     <h3>Education</h3>
+    </a>
+    <a href="">
+     <h3>Engineering</h3>
+    </a>
+    <a href="">
+     <h3>Guarding & security</h3>
+    </a>
+    <a href="">
+     <h3>HR</h3>
+    </a>
+    <a href="">
+     <h3>IT & Telecom</h3>
+    </a>
+    <a href="">
+     <h3>Legal & Lawyers</h3>
+    </a>
+    <a href="">
+     <h3>Management & Consulting</h3>
+    </a>
+    <a href="">
+     <h3>Marketing and Public Relations</h3>
+    </a>
+    <a href="">
+     <h3>Medical, Healthcare & Nursing</h3>
+    </a>
+    <a href="">
+     <h3>Sales</h3>
+    </a>
+    <a href="">
+     <h3>Secretarial</h3>
+    </a>
+    <a href="">
+     <h3>Tourism & Travel</h3>
+    </a>
+    <a href="" class="border-bottom">
+     <h3>Workers & Technicians</h3>
+    </a>
+
+    <a href="">
+     <h3>Other Job</h3>
+    </a>
+
+   </div>
+  </div>
+
+  <div class="nav-links border-y from-top block-a">
+
+   <div>
+    <a href="">
+     <h2>Fashion & Beauty</h2>
+    </a>
+    <div>
+     <a href="">
+      <h3>all in Fashion & Beauty<ri>»</ri>
+      </h3>
+     </a>
+     <a href="">
+      <h3>Men's Clothing
+      </h3>
+     </a>
+     <a href="https://google.com" class="border-bottom">
+      <h3>Women's Clothing</h3>
+     </a>
+     <a href="">
+      <h3>Men's accessories & personal care
+      </h3>
+     </a>
+     <a href="">
+      <h3>Women's Accessories, Cosmetics & Personal Care
+      </h3>
+     </a>
+    </div>
+   </div>
+
+   <div>
+    <a href="">
+     <h2>Pets & Accessories</h2>
+    </a>
+    <div>
+     <a href="">
+      <h3>all in Pets & Accessories<ri>»</ri>
+      </h3>
+     </a>
+     <a href="https://google.com">
+      <h3>Birds & Pigeons</h3>
+     </a>
+     <a href="">
+      <h3>Cats
+      </h3>
+     </a>
+     <a href="">
+      <h3>Dogs
+      </h3>
+     </a>
+     <a href="">
+      <h3>Other Pets & Animals
+      </h3>
+     </a>
+     <a href="">
+      <h3>Accessories & Pet Care Products
+      </h3>
+     </a>
+    </div>
+   </div>
+
+   <div>
+    <a href="">
+     <h2>Kids & Babies</h2>
+    </a>
+    <div>
+     <a href="">
+      <h3>all in Kids & Babies<ri>»</ri>
+      </h3>
+     </a>
+     <a href="https://google.com">
+      <h3>Baby & Mom Healthcare</h3>
+     </a>
+     <a href="">
+      <h3>Baby Clothing
+      </h3>
+     </a>
+     <a href="">
+      <h3>Baby Feeding Tools
+      </h3>
+     </a>
+     <a href="">
+      <h3>Cribs, Strollers & Carriers
+      </h3>
+     </a>
+     <a href="">
+      <h3>Toys
+      </h3>
+     </a>
+     <a href="">
+      <h3>Other Baby Items
+      </h3>
+     </a>
+    </div>
+   </div>
+
+   <div>
+
+    <a href="">
+     <h2>Services</h2>
+    </a>
+    <div>
+     <a href="">
+      <h3>all in Services<ri>»</ri>
+      </h3>
+     </a>
+     <a href="https://google.com">Business</h3></a>
+     <a href="">
+      <h3>Cars
+      </h3>
+     </a>
+     <a href="">
+      <h3>Events
+      </h3>
+     </a>
+     <a href="">
+      <h3>Education
+      </h3>
+     </a>
+     <a href="">
+      <h3>Health & Beauty
+      </h3>
+     </a>
+     <a href="">
+      <h3>Home Services & Maintenance
+      </h3>
+     </a>
+     <a href="">
+      <h3>Medical
+      </h3>
+     </a>
+     <a href="">
+      <h3>Pets
+      </h3>
+     </a>
+     <a href="">
+      <h3>Other Services
+      </h3>
+     </a>
+    </div>
+   </div>
+
+   <div>
+    <a href="">
+     <h2>Books, Sports & Hobbies</h2>
+    </a>
+    <div>
+     <a href="">
+      <h3>all in Books, Sports & Hobbies<ri>»</ri>
+      </h3>
+     </a>
+     <a href="https://google.com">Antiques & Collectibles</h3></a>
+     <a href="">
+      <h3>Bicycles
+      </h3>
+     </a>
+     <a href="">
+      <h3>Books
+      </h3>
+     </a>
+     <a href="">
+      <h3>Board & Card Games
+      </h3>
+     </a>
+     <a href="">
+      <h3>Movies & Audios
+      </h3>
+     </a>
+     <a href="">
+      <h3>Sports Equipment
+      </h3>
+     </a>
+     <a href="">
+      <h3>Study Tools
+      </h3>
+     </a>
+     <a href="">
+      <h3>Tickets & Vouchers
+      </h3>
+     </a>
+     <a href="">
+      <h3>Luggage
+      </h3>
+     </a>
+     <a href="">
+      <h3>Other Items
+      </h3>
+     </a>
+    </div>
+   </div>
+
+  </div>
+
+ </nav>
+ <main class="home">
+
+  <section class="slide-header">
+   <form action="" onload="" onclick="addRemove('image-slide', 'slide-effect', 'd-block')"
+    class="image-slide slide-effect">
+
+    <input type="radio" name="toggle-image" checked id="red" value="red">
+    <input type="radio" name="toggle-image" id="green" value="green">
+    <input type="radio" name="toggle-image" id="blue" value="blue">
+
+    <label for="red">
+     <div class="red"></div>
+    </label>
+
+    <label for="green">
+     <div class="green"></div>
+    </label>
+
+    <label for="blue">
+     <div class="blue"></div>
+    </label>
+
+   </form>
+  </section>
+
+  <section class="cards">
+
+   <article class="card-layer">
+    <article class="cards-category">
+     <a href="">
+      <h2>properties<ri>❭</ri>
+      </h2>
+     </a>
+    </article>
+
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+
+    </article>
+   </article>
+
+
+   <article class="card-layer">
+    <article class="cards-category">
+     <a href="">
+      <h2>vehicles<ri>❭</ri>
+      </h2>
+     </a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+   <article class="card-layer">
+    <article class="cards-category">
+     <a href="">
+      <h2>Mobiles & Tablets<ri>❭</ri>
+      </h2>
+     </a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+
+   </article>
+
+
+   <article class="card-layer">
+    <article class="cards-category">
+     <a href="">
+      <h2>Electronics & Appliances<ri>❭</ri>
+      </h2>
+     </a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+
+   <article class="card-layer">
+    <article class="cards-category">
+     <a href="">
+      <h2>Furniture & Decor<ri>❭</ri>
+      </h2>
+     </a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+
+
+   <article class="card-layer">
+    <article class="cards-category">
+     <a href="">
+      <h2>Business, Industrial & Agriculture<ri>❭</ri>
+      </h2>
+     </a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+
+   <article class="card-layer">
+
+    <article class="cards-category">
+     <a href="">
+      <h2>Fashion & Beauty<ri>❭</ri>
+      </h2>
+     </a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+
+   <article class="card-layer">
+
+    <article class="cards-category">
+     <h2><a href="#">Pets & Accessories<ri>❭</ri>
+     </h2></a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+
+   <article class="card-layer">
+
+    <article class="cards-category">
+     <h2><a href="#">Kids & Babies<ri>❭</ri>
+     </h2></a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+
+   <article class="card-layer">
+
+    <article class="cards-category">
+     <h2><a href="#">Books, Sports & Hobbies<ri>❭</ri>
+     </h2></a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+
+
+   <article class="card-layer">
+    <article class="cards-category">
+     <h2><a href="#">Jobs<ri>❭</ri>
+     </h2></a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+   </article>
+
+
+   <article class="card-layer">
+
+    <article class="cards-category">
+     <h2><a href="#">Services<ri>❭</ri>
+     </h2></a>
+    </article>
+    <article class="cards-row">
+
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+     <article class="ad-card">
+
+      <a href="https://google.com"><img src="images/2.jpg" alt=""></a>
+
+      <div class="information-ad-card">
+
+       <span class="card-ad-price">420 EGP</span>
+
+       <div class="card-favorite">
+       </div>
+
+       <div class="card-ad-title"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+       </div>
+
+       <div class="card-ad-location">Alexandria, Awayed.</di>
+        <div class=" card-ad-date">4 days ago.</div>
+       </div>
+      </div>
+     </article>
+    </article>
+
+   </article>
+
+
+  </section>
+
+ </main>
+
+ <a class="sell-on-fly btn">
+  <img src="icons/camera.svg">
+  sell now
+ </a>
+
+
+
+ <footer>
+
+  <a onclick="backTop()" class="footer-to-top">
+   <img src="icons/drop-down.svg" class="rotate"><br>back to top
+  </a>
+
+  <div class="footer-one">
+
+   <a href=""><img src="images/a.png" alt="logo" width="60" class="invert"></a>
+
+   <div class="footer-follow">
+    follow us:
+
+    <a href="">
+     <img src="icons/Facebook-logo.svg" width="36" alt="facebook">
+    </a>
+    <a href="">
+     <img src="icons/twitter.svg" width="48" alt="twitter">
+    </a>
+   </div>
+
+  </div>
+
+  <nav class="footer-about">
+   <bl>
+    <a href="">about us</a>
+    <a href="">contact us</a>
+   </bl>
+   <bl>
+    <a href="">blog</a>
+    <a href="">help</a>
+   </bl>
+  </nav>
+
+  <article class="footer-download">
+   <a href=""><img src="icons/iconAppStoreEN.svg" alt="App Store" width="128"></a>
+   <a href=""><img src="icons/iconGooglePlayEN.svg" width="128" alt="Google Play"></a>
+   <a href=""><img src="icons/iconAppGallery.svg" width="128" alt="App Gallery"></a>
+  </article>
+
+  <article class="footer-copy">
+   <div><a href="">use conditions</a> | <a href="">privacy police</a></div>
+   <div>© All rights reserved.</div>
+  </article>
+
+ </footer>
+ <script defer src="js/global.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+nav {
+   z-index: 6;
+   display: flex;
+   background-color: var(--gray-2);
+   color: var(--white);
+   font-size: 0.95rem;
+   justify-content: space-evenly;
+   position: relative;
+   padding: 8px;
+   transition: top 0.25s;
+   position: sticky;   
+}
+
+
+.nav-links {
+   font-weight: normal;
+   animation: ease-in-out top 0.4s;
+   z-index: 100;
+   display: none;
+   position: absolute;
+   width: 100%;
+   top: 100%;
+   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+   line-height: 1.5;
+   left: 0;
+   background-color: var(--gray-3);
+   padding: 8px 24px;
+   gap: 8px;
+   flex-wrap: wrap;
+}
+
+.nav-links>div {
+   flex: 1;
+   white-space: nowrap;
+   border: 1px solid var(--gray-6);
+   border-radius: 8px;
+   padding: 8px 16px 8px;
+}
+
+.nav-links :not(:nth-of-type(1)) a:last-child {
+   padding-top: 4px;
+   border-top: 2px solid var(--gray-6);
+}
+
+.nav-links div div {
+   line-height: 2;
+   margin: 0 16px;
+   padding-top: 4px;
+}
+
+.nav-links a {
+   display: block;
+}
+
+.nav-links > div> a {
+   font-weight: bold;
+   font-size: 1rem;
+}
+
+.jobs {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.jobs a:not(:first-child) {
+   display: block;
+   padding: 8px;
+}
+
+.jobs a:not(:first-child):hover {
+   background-color: var(--gray-3);
+   border-radius: 4px;
+}
+
+.jobs>div {
+   margin-top: 16px;
+   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+   padding: 8px 4px 4px;
+   border-radius: 8px;
+}
+
+nav .click-show {
+   display: none;
+   position: absolute;
+}
+nav .parent-click:hover .click-show {
+   display: block;
+}
+
+
+nav .parent-click .click-show a {
+   text-decoration: none;
+   display: block;
+   padding: 8px;
+}
+
+nav .parent-click .click-show a:hover {
+   background-color: var(--gray-3);
+   border-radius: 4px;
+}
+
+nav .parent-click .click-show {
+   background-color: var(--gray-2);
+
+   border-width: 0px 0 2px 0;
+   border-color: var(--gray-6);
+   border-style: solid;
+   z-index: 103;
+   padding: 4px;
+   padding-top: 8px;
+
+   border-radius: 8px;
+
+   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+nav div {
+   padding: 0 8px;
+}
+
+.parent-click div a:first-child,
+.nav-links div div a:first-child {
+   display: none !important;
+}
+#nav{
+text-align: center;
+}
+#nav a:not(#nav>div >a){
+    text-align: initial;
+}

@@ -1,0 +1,195 @@
+.sign-in-header>img {
+  width: 2rem;
+}
+
+nav:not(.footer-about) {
+  display: flex;
+  background-color: var(--light-3);
+  overflow-x: auto;
+  margin: 8px;
+  padding: 8px 92px 8px 8px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  height: fit-content;
+  gap: 8px;
+  line-height: 1.125;
+  border: 1px solid var(--light-2);
+}
+[dir='rtl'] nav:not(.footer-about) {
+  padding: 8px 8px 8px 118px;
+}
+
+nav>div:first-child {
+  display: none;
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 4px 0 0 108px;
+  background-color: transparent;
+  gap: 8px;
+}
+[dir='rtl'] .nav-links {
+  margin: 4px 108px 0 0;
+}
+
+nav>div,
+.nav-links>div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  font-weight: bold;
+
+  background-color: var(--light-2-5);
+  position: relative;
+  /* padding: 60px 8px 4px 8px; */
+  padding: 4px;
+
+  border-radius: 8px;
+  flex: 1 0 110px;
+  height: 110px;
+  text-align: center;
+}
+
+nav>div>a::before,
+.nav-links>div>a::before,
+nav>div>input::before,
+.nav-links>div>input::before {
+  content: "";
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-repeat: no-repeat !important;
+}
+
+nav>div:nth-child(2)>a::before {
+  background: url("../icons/car-and-bus.svg");
+  width: 5rem;
+  height: 5rem;
+}
+
+nav>div:nth-child(3)>a::before {
+  background: url("../icons/commercial_property.svg");
+}
+
+nav>div:nth-child(4)>a::before {
+  background: url("../icons/tablet-704-1.svg");
+}
+
+nav>div:nth-child(5)>a::before {
+  background: url("../icons/electronics.svg");
+  padding-bottom: 0.5rem;
+}
+
+nav>div:nth-child(6)>a::before {
+  background: url("../icons/furniture-icon.svg");
+}
+
+nav>div:nth-child(7)>a::before {
+  background: url("../icons/industry-factory-icon.svg");
+  padding-bottom: 1rem;
+}
+
+nav>div:nth-child(8)>a::before {
+  background: url("../icons/job-ico.svg");
+}
+
+.nav-links>div:nth-child(1)>a::before {
+  background: url("../icons/clothes_hanger.svg");
+}
+
+.nav-links>div:nth-child(2)>a::before {
+  background: url("../icons/pets-ico.svg");
+}
+
+.nav-links>div:nth-child(3)>a::before {
+  background: url("../icons/wrapped-baby-svgrepo-com.svg");
+  padding-bottom: 0.5rem;
+}
+
+.nav-links>div:nth-child(4)>a::before {
+  background: url("../icons/service.svg");
+}
+
+.nav-links>div:nth-child(5)>a::before {
+  background: url("../icons/books-stack-of-three-svgrepo-com.svg");
+  padding-bottom: 1.5rem;
+}
+
+nav .click-show a:not(:first-child),
+.nav-links div div a:not(:first-child) {
+  display: block;
+  font-size: 1rem;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 4px;
+  background-color: var(--light-2-5);
+}
+
+nav .click-show a:first-child,
+.nav-links>div>div>a:first-child {
+  display: block;
+  width: fit-content;
+}
+
+.nav-links h2 {
+  font-weight: bold;
+}
+
+nav {
+  font-size: 0.95rem;
+}
+
+nav .click-show a:first-child,
+.nav-links div div a:first-child {
+  font-size: 1.25rem;
+  margin: 0 auto 16px 8px;
+}
+
+nav .click-show a:not(:first-child):hover,
+nav>div:not(:last-child):hover,
+.nav-links div a:not(:first-child):hover {
+  background-color: var(--light-2);
+  transition: background-color 0.1s;
+}
+
+nav .click-show a:not(:first-child):active,
+nav>div:not(:last-child):active,
+.nav-links div a:not(:first-child):active {
+  background-color: var(--light-1);
+}
+
+nav .click-show,
+.nav-links div div {
+  display: none;
+  z-index: 1000;
+  max-height: 96vh;
+  overflow-y: auto;
+  background-color: var(--light-3);
+
+  width: 360px;
+  max-width: 75vw;
+
+  padding: 16px 8px 8px;
+
+  border-radius: 8px;
+
+  top: 50%;
+  left: 50%;
+
+  animation: ease-in-out down-left 0.5s;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  box-shadow: 0 0 50px 75vw rgba(0, 0, 0, 0.5);
+}
+
+.image-slide {
+  margin: 0 8px;
+}

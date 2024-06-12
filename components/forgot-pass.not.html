@@ -1,0 +1,42 @@
+
+
+<form method='POST' class="sign-in-form forgot-pass">
+ <span>We will send a confirmation code to your number or email</span>
+
+ <label>your email or phone number:<input minlength='9' name='restore-email' required class='phoneOrEmail' type="text"
+   autocomplete="email" placeholder="type your mobile number or email"><span class='inv'></span></label>
+
+
+ <input type="submit" onclick="toggle('.type-code', 'flex')" value="Next">
+
+
+</form>
+
+
+<form method='POST' class="sign-in-form type-code">
+
+ <label>your confirmation code:<input type="number" required minlength='6' placeholder="For example: 123456"></label>
+
+ <input type="submit" value="Check">
+
+
+</form>
+
+
+<form method='POST' class="sign-in-form res-password">
+
+ <label>new password:<input id='res-password' required type="password" minlength='6'
+   placeholder="At least 6 Characters"><span class='inv'></span></label>
+
+
+ <label>re-enter the new password:<input id='retype-res-password' name='new-password' required minlength='6'
+   type="password"><span class='inv'></span></label>
+
+
+
+ <input type="submit" value="Check">
+
+
+
+</form>
+

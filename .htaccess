@@ -1,0 +1,2 @@
+RewriteEngine On
+Redirect 301 http://localhost/design/ad/?page=download http://www.domain-name.com/download/show
